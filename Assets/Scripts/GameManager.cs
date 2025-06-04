@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     private int lives = 3;
     private Vector2 spawnPoint;
     private Vector2? checkpoint = null;
+    public GameObject gameCompletePanel;
 
     void Awake()
     {
@@ -93,16 +94,29 @@ public class GameManager : MonoBehaviour
     {
         livesText.text = "Lives: " + lives;
     }
-    
+
     public void RestartLevel()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Trial_1");
+    }
+
     public void GoToMenu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
+    }
+
+    public void GameComplete()
+    {
+        Time.timeScale = 0f;
+        gameCompletePanel.SetActive(true);
+        AudioManager.Instance.PlayEndTrial();
     }
 }

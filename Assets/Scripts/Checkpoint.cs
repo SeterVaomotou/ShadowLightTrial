@@ -14,6 +14,7 @@ public class Checkpoint : MonoBehaviour
             Debug.Log("Player hit checkpoint.");
             activated = true;
             GameManager.Instance.SetCheckpoint(transform.position);
+            AudioManager.Instance.PlayCheckpoint();
         }
         Debug.Log("Triggered by: " + other.name);
     }

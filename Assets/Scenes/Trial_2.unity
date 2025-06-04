@@ -1632,6 +1632,7 @@ MonoBehaviour:
   livesText: {fileID: 969940918}
   timerText: {fileID: 976491091}
   gameOverPanel: {fileID: 774432483}
+  gameCompletePanel: {fileID: 0}
 --- !u!4 &495658595
 Transform:
   m_ObjectHideFlags: 0
@@ -6129,6 +6130,10 @@ PrefabInstance:
     - target: {fileID: 3735348035297112776, guid: b735cae4d7e87854ea48b1b9630003b1, type: 3}
       propertyPath: m_Name
       value: Finish
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735348035297112776, guid: b735cae4d7e87854ea48b1b9630003b1, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
