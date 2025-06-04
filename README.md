@@ -21,8 +21,8 @@ Your goal? Conquer the obstacles, and ascend toward the light.
 - **Pause Menu** — Resume/Quit options with a clean UI
 - **Checkpoint System** — Glowing flag-pole save progress during trials
 - **Lives System** — Player has 3 lives per section, resets on failure
-- **Hazards & Obstacles** — Spikes, moving platforms
-- **Sound Effects** — Jump, death, checkpoint activation, and ambient music
+- **Hazards & Obstacles** — Spikes, vanishing platforms, enemies
+- **Sound Effects** — Jump, checkpoint activation, and music
 - **Game Complete Screen** — Celebrates your success and lets you replay or quit
 
 ---
