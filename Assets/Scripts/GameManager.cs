@@ -119,4 +119,10 @@ public class GameManager : MonoBehaviour
         gameCompletePanel.SetActive(true);
         AudioManager.Instance.PlayEndTrial();
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Game Closed");
+    }
 }
